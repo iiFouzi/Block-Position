@@ -16,7 +16,7 @@ class Main extends PluginBase implements Listener
   
   public function onEnable()
   {
-    $this->getLogger()->info(TF::BLUE . "BlockPs has been enabled");
+    $this->getServer()->getLogger()->info(TF::BLUE . "BlockPs has been enabled");
     $this->getServer()->getPluginManager()->registerEvents($this, $this);
   }
   
@@ -34,7 +34,7 @@ class Main extends PluginBase implements Listener
   
   public function onDisable()
   {
-    $this->getLogger()->info(TF::RED . "BlockPs has been disabled");
+    $this->getServer()->getLogger()->info(TF::RED . "BlockPs has been disabled");
   }
   
 }
